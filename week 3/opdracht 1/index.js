@@ -1,4 +1,5 @@
 import express from 'express';
+import * as fs from 'node:fs';
 
 const app = express();
 const port = 3000;
@@ -39,8 +40,15 @@ app.get('/json-example', (req, res) => {
 });
 
 app.get('/json-example2', (req, res) => {
-  // res.setHeader('Content-type', 'application/json;charset=UTF-8');
-  res.json(songArray);
+  res.setHeader('Content-type', 'application/json;charset=UTF-8');
+  res.send(songArray);
+});
+
+app.get('/pokemon', (req, res) => {
+  res.setHeader('Content-type', 'application/json;charset=UTF-8');
+  fs.readFile('data/poke.json', function(err, data) {
+    res.send(data);
+  });
 });
 
 app.listen(port, () => {
