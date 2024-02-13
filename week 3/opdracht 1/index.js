@@ -1,8 +1,11 @@
 import express from 'express';
 import * as fs from 'node:fs';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 const songArray = [
   {
