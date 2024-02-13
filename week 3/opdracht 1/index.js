@@ -54,6 +54,13 @@ app.get('/pokemon', (req, res) => {
   });
 });
 
+app.get('/mikehtml', (req, res) => {
+  res.setHeader('Content-type', 'text/html');
+  fs.readFile('html/index.html', function(err, data){
+      res.send(data);
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
