@@ -6,6 +6,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
+app.use(express.static('public'));
 
 const songArray = [
   {
@@ -57,6 +58,13 @@ app.get('/pokemon', (req, res) => {
 app.get('/mikehtml', (req, res) => {
   res.setHeader('Content-type', 'text/html');
   fs.readFile('html/index.html', function(err, data){
+      res.send(data);
+  });
+});
+
+app.get('/mikecss', (req, res) => {
+  res.setHeader('Content-type', 'text/css');
+  fs.readFile('css/style.css', function(err, data){
       res.send(data);
   });
 });
