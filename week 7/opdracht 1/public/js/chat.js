@@ -12,7 +12,7 @@ messageInput.addEventListener('keyup', function (e) {
     if (e.key == 'Enter') {
         postMessage();
     }
-})
+});
 
 messageButton.addEventListener('click', function () {
     postMessage();
