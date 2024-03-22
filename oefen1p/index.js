@@ -1,4 +1,5 @@
 import express from 'express';
+import fs from 'node:fs';
 
 const app = express();
 const port = 3000;
@@ -29,6 +30,13 @@ app.get('/', (req, res) => {
 
 app.get('/players', (req, res) => {
     res.json(players);
+});
+
+app.get('/pokemon', (req, res) => {
+    res.setHeader('Content-type', 'application/json;charset=UTF-8');
+    fs.readFile('data/poke.json', function(err, data){
+        res.send(data);
+    });
 });
 
 app.listen(port, () => {
