@@ -1,0 +1,30 @@
+*{
+    /*goed genoeg*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*container with 3 columns that contains all the cards */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/*card class is the card which has content centered */
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/*images have a fixed width and height and use object-fit to fit the image */
+.card > img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
