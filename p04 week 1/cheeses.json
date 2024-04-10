@@ -1,0 +1,24 @@
+[
+
+    {
+          "name": "Edammer",
+          "description": "Kaas uit Edam",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/SmallEdamCheese.jpg/1280px-SmallEdamCheese.jpg"
+    },
+    {
+          "name": "Gouda",
+          "description": "Kaas uit Gouda",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Gouda.jpg"
+    },
+    {
+          "name": "Port Salut",
+          "description": "Kaas uit Port du Salut",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Port_Salut_cheese.jpg"
+    },
+    {
+          "name": "Brie",
+          "description": "Lekker op stokbrood",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Brie_01.jpg/1920px-Brie_01.jpg"
+    }
+
+]
