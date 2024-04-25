@@ -30,7 +30,7 @@ function createCard(cheese) {
     //we use the back tick here to ease our minds adding in variables (no plusjes yay!)
     const card = `
         <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card">
+            <div class="card bg-dark text-white">
                 <h2>${cheese.name}</h2>
                 <img class="card-img-top" src="${cheese.image}" />
                 <p>${cheese.description}</p>
