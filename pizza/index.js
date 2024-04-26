@@ -6,16 +6,13 @@ import bodyParser from 'body-parser';
 const app = express();
 const port = 3000;
 
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 const url = process.env.CONNECTION_URL;
 console.log(url);
 
 const client = new MongoClient(url);
-
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
 
 app.get('/pizzas', (req, res) => {
     fetchPizza().then(pizzas => {
@@ -28,6 +25,9 @@ app.post('/add-pizza', (req, res) => {
     const description = req.body.description;
     const price = req.body.price;
 
+    insertPizza(name, description, price).then(
+        res.json({pizzaAdded: true})
+    )
 
 });
 
