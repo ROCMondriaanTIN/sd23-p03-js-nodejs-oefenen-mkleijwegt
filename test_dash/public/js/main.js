@@ -1,40 +1,61 @@
-const chart1 = document.querySelector('.chart-1');
-const chart2 = document.querySelector('.chart-2');
-const chart3 = document.querySelector('.chart-3');
-const chart4 = document.querySelector('.chart-4');
+console.log('main loaded');
 
+const chart1 = document.querySelector('.chart1');
+const chart2 = document.querySelector('.chart2');
 
-
-fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m')
-    .then(myData => myData.json())
-    .then(myJsonData => createCharts(myJsonData));
-
-
-function createCharts(weatherData) {
-    createChart(chart1, weatherData.hourly.time, weatherData.hourly.temperature_2m);
-    createChart(chart2);
-    createChart(chart3);
-    createChart(chart4);
-}
-
-
-function createChart(canvas, labels, data) {
-    new Chart(canvas, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: '# of Votes',
-                data: data,
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
+new Chart(chart1, {
+    type: 'pie',
+    data: {
+      //de labels komen op de x as
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        // de data komt op de y as
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
         }
-    });
-}
+      }
+    }
+});
+
+new Chart(chart2, {
+    type: 'doughnut',
+    data: {
+      //de labels komen op de x as
+      labels: ['Rick Astley - Never gonna give you up', 'Darude - Sandstorm', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        // de data komt op de y as
+        data: [50, 33, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+});
+
+const emailInput = document.querySelector('.email-input');
+const loginForm = document.querySelector('.login-form');
+
+emailInput.addEventListener('keyup', function(){
+    if(!loginForm.checkValidity()){
+        console.log('Is not valid');
+        emailInput.classList.remove('border-success');
+        emailInput.classList.add('border-danger', 'border-3');
+    } else{
+        console.log('Is valid');
+        emailInput.classList.remove('border-danger');
+        emailInput.classList.add('border-success', 'border-3');
+    }
+});
