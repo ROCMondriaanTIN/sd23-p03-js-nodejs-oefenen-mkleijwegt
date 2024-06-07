@@ -1,0 +1,154 @@
+{
+    "id": "ELEKTRICITEIT001",
+    "name": "Elektriciteit Centrale NL",
+    "location": {
+        "postcode": "2500 MB",
+        "city": "Den Haag",
+        "citySlug": "denhaag",
+        "lat": "25.635244",
+        "lon": "8.323424"
+    },
+    "status": "IN OPERATIE",
+    "price_installation": "7500000",
+    "images": [
+        "data:image/jpeg;base64,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"
+    ],
+    "imageEnabled": true,
+    "floorplans": null,
+    "capacity": {
+        "totalCapacityV": 20000,
+        "numberOfGenerators": 100,
+        "capacityPerGeneratorV": 200
+    },
+    "developer": {
+        "name": "ElektraNL BV",
+        "contactInformation": {
+            "address": "De Constant Rebecqueplein, 2518 RA Den Haag, Nederland",
+            "phone": "+31 6 32 123 3421",
+            "email": "contact@ElektraNL.nl"
+        }
+    },
+    "valuation": {
+        "sale_l": 7500000,
+        "sale_m": 8000000,
+        "sale_u": 9500000,
+        "active_model": "energy_model",
+        "sale_accuracy_label": "hoog",
+        "rent_l": 200000,
+        "rent_m": 450000,
+        "rent_u": 300000,
+        "needs_update": false,
+        "is_large_sale_dev": false,
+        "updated_at": "01-05-2024",
+        "disclaimer": "De waardering is een schatting en kan variëren.",
+        "show_needs_update_message": false
+    },
+    "trend": [
+        {
+            "date": "2023-01-01",
+            "value": 7750000
+        },
+        {
+            "date": "2023-02-01",
+            "value": 7250000
+        },
+        {
+            "date": "2023-03-01",
+            "value": 5350000
+        },
+        {
+            "date": "2023-04-01",
+            "value": 4900000
+        },
+        {
+            "date": "2023-05-01",
+            "value": 3500000
+        },
+        {
+            "date": "2023-06-01",
+            "value": 6970000
+        },
+        {
+            "date": "2023-07-01",
+            "value": 3475000
+        },
+        {
+            "date": "2023-08-01",
+            "value": 3250000
+        },
+        {
+            "date": "2023-09-01",
+            "value": 4200000
+        },
+        {
+            "date": "2023-10-01",
+            "value": 5550000
+        },
+        {
+            "date": "2023-11-01",
+            "value": 5125000
+        },
+        {
+            "date": "2023-12-01",
+            "value": 7225000
+        }
+    ],
+    "energyConsumption": {
+        "currentYear": 2024,
+        "monthlyData": {
+            "January": {
+                "currentYear": 400000,
+                "previousYear": 37500
+            },
+            "February": {
+                "currentYear": 410000,
+                "previousYear": 360000
+            },
+            "March": {
+                "currentYear": 425000,
+                "previousYear": 400000
+            },
+            "April": {
+                "currentYear": 450000,
+                "previousYear": 435000
+            },
+            "May": {
+                "currentYear": 480000,
+                "previousYear": 460000
+            },
+            "June": {
+                "currentYear": 500000,
+                "previousYear": 490000
+            },
+            "July": {
+                "currentYear": 525000,
+                "previousYear": 510000
+            },
+            "August": {
+                "currentYear": 540000,
+                "previousYear": 520000
+            },
+            "September": {
+                "currentYear": 545000,
+                "previousYear": 460000
+            },
+            "October": {
+                "currentYear": 550000,
+                "previousYear": 425000
+            },
+            "November": {
+                "currentYear": 575000,
+                "previousYear": 450000
+            },
+            "December": {
+                "currentYear": 600000,
+                "previousYear": 550000
+            }
+        }
+    },
+    "isClaimed": true,
+    "hasOffice": true,
+    "isVisible": true,
+    "cache_hit": true,
+    "user_is_following": true
+}
